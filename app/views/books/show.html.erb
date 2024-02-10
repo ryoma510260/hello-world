@@ -15,7 +15,11 @@
   <%= @book.isbn %>
 </p>
 
-<%= image_tag @book.cover.variant(resize: "250") %>
+<% if @book.cover.attached? %>
+  <%= image_tag @book.cover.variant(resize: "250") %>
+<% else %>
+  <%= image_tag image_path('default_cover.png') %>
+<% end %>
 
 <p>
   <strong>Publish date:</strong>
