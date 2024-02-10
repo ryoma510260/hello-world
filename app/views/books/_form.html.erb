@@ -24,6 +24,11 @@
     <%= form.text_field :isbn %>
   </div>
 
+  <div>
+    <%= form.label :cover %>
+    <%= form.file_field :cover %>
+  </div>
+
   <div class="field">
     <%= form.label :publish_date %>
     <%= form.date_select :publish_date %>
