@@ -17,6 +17,8 @@
   },
   "version": "0.1.0",
   "devDependencies": {
+    "compression-webpack-plugin": "^11.0.0",
     "webpack-dev-server": "^3"
-  }
+  },
+  "packageManager": "yarn@1.22.21"
 }
