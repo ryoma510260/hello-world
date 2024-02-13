@@ -29,3 +29,6 @@ console_command = '/rails/bin/rails console'
   guest_path = '/rails/public'
   url_prefix = '/'
 
+[mounts]
+  source="hw5x_data"
+  destination="/data"
